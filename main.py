@@ -6,7 +6,7 @@ app = Flask(__name__)
 def Chat_bot():
     return render_template('index.html')
 
-@app.route('https://flask-production-ca32.up.railway.app/chat', methods=['POST'])
+@app.route('/chat', methods=['POST'])
 def chat():
     mensajes_in = []
     b = chatbot.chatBot()
