@@ -2,7 +2,7 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 import chatbot
 app = Flask(__name__)
 
-@app.route('https://flask-production-ca32.up.railway.app/')
+@app.route('/')
 def Chat_bot():
     return render_template('index.html')
 
